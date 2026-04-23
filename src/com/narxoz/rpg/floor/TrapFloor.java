@@ -3,7 +3,6 @@ package com.narxoz.rpg.floor;
 import com.narxoz.rpg.combatant.Hero;
 import com.narxoz.rpg.state.PoisonedState;
 import com.narxoz.rpg.state.StunnedState;
-
 import java.util.List;
 
 public class TrapFloor extends TowerFloor {
@@ -26,7 +25,7 @@ public class TrapFloor extends TowerFloor {
     /** HOOK OVERRIDE: custom announce() banner. */
     @Override
     protected void announce() {
-        System.out.println("\n~~~ " + floorName + " ~~~");
+        System.out.println("~~~ " + floorName + " ~~~");
         System.out.println("A sinister " + trapType.toString().toLowerCase()
                 + " trap lurks beneath the floor stones...");
     }
