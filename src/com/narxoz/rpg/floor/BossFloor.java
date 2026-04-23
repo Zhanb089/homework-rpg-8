@@ -41,7 +41,7 @@ public class BossFloor extends TowerFloor {
         int round = 1;
 
         while (boss.isAlive() && anyAlive(party)) {
-            System.out.println("\n  === Round " + round++ + " ===");
+            System.out.println("  === Round " + round++ + " ===");
 
             for (Hero h : party) {
                 if (!h.isAlive()) continue;
