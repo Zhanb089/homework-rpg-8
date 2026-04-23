@@ -17,7 +17,6 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        // Two heroes with different starting states.
         Hero valiant = new Hero("Valiant", 60, 12, 3, new NormalState());
         Hero shadow  = new Hero("Shadow",  45, 10, 4, new StunnedState());
 
@@ -52,7 +51,7 @@ public class Main {
 
         TowerRunResult result = runner.climb(party);
 
-        System.out.println("\n====== TOWER RUN SUMMARY ======");
+        System.out.println("====== TOWER RUN SUMMARY ======");
         System.out.println("Floors cleared   : " + result.getFloorsCleared()
                 + " / " + floors.size());
         System.out.println("Heroes surviving : " + result.getHeroesSurviving()
